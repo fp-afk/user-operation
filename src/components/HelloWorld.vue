@@ -68,7 +68,7 @@ export default {
   data() {
       return {
         input2: '',
-        // 相当数据库的值
+        // 相当于数据库的数据
         tableDataFixed: [{
           id: 1,
           name: '王小虎',
