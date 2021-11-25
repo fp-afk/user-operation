@@ -139,6 +139,7 @@ export default {
       handleDelete(index, row) {
         console.log(index, row);
         this.tableData.splice(index,1);
+        this.tableDataFixed.splice(index,1);
       },
       sure(value){
         if(value.id){
@@ -146,7 +147,7 @@ export default {
           this.tableDataFixed.splice(value.index,1,value);
         } else{
           const data = {
-            id: this.tableData.length,
+            id: this.tableDataFixed.length,
             name: value.name,
             age: value.age,
             address: value.address,
